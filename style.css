@@ -1,201 +1,262 @@
+/* global styles */
 
-/***** top of page links   ***/
-nav{
-    font-family: Georgia, serif; 
-    text-align: center;
-    color: rgb(146, 48, 181);
-}
-
-/****** gradient background */
+/*****   *****   *****   *****   *****   *****   ****   *****/
+/* gradient background */
 body{
-    background: #F0C5FF;
-    background: -moz-linear-gradient(left, rgb(70, 22, 87) 0%, #CBCBCB 50%, #F0C5FF 100%);
-    background: -webkit-linear-gradient(left, #F0C5FF 0%, #CBCBCB 50%, #F0C5FF 100%);
-    background: linear-gradient(to right, #F0C5FF 0%, #CBCBCB 50%, #F0C5FF 100%);
+  font-family: Arial, sans-serif;
+  background: #F0C5FF;
+  background: -moz-linear-gradient(left, rgb(70, 22, 87) 5%, #CBCBCB 50%, #F0C5FF 100%);
+  background: -webkit-linear-gradient(left, #F0C5FF 0%, #CBCBCB 50%, #F0C5FF 100%);
+  background: linear-gradient(to right, #F0C5FF 0%, #CBCBCB 50%, #F0C5FF 100%);
+  padding: auto;
 }
 
-/***** image styles (border and max width)*/
-img{ 
-    border: 50px solid #000; 
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 400px;
-   
+/*   top of each page --- Black and white nav control */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+/*  links underline when hovered */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/*****   *****   *****   *****   *****   *****   ****   *****/
+
+  
+* {
+  box-sizing: border-box;
+}
+
+/* Two-Image Container */
+.two-image-container {
+  display: flex;
+}
+
+.two-image-container .column {
+  flex: 50%;
+  padding: 5px;
 }
 
 
-/*****  index page Amanda Moore ***/
-.header #Amanda{
-    text-align: center
+/* Three-Image Container */
+.three-image-container {
+  display: flex;
 }
 
-
-/***** index header "About me" ***/
-.header p{
-    color: rgb(146, 48, 181);
+.three-image-container .column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
+/*   list   */
+ul {
+  list-style: inside;
+  text-align: center;
+  color: rgb(110, 106, 114);
+  font-family: Georgia, serif;
+  font-size: 20px;
+  padding: 0;
+margin: 0;
+}
 
+li {
+  margin-bottom: 0.5rem;
+}
 
-/*****   ***/
 ol{
-    list-style: inside;
-    text-align: center; 
-    color: rgb(110, 106, 114);
-    font-family: Georgia, serif;
-    font-size: 20px;
+  list-style: inside;
+  text-align: center; 
+  color: rgb(110, 106, 114);
+  font-family: Georgia, serif;
+  font-size: 20px;
 } 
 
 /*****   ***/
-ul{
-    list-style: inside;
-    text-align: center;
-    color: rgb(110, 106, 114);
-    font-family: Georgia, serif;
-    font-size: 20px;
-}
-
-/*****   ***/
 h1{
-    font-family: Georgia, serif;
-    font-size: 40px;
-    letter-spacing: 3px;
-    word-spacing: 15px;
-    color: #7F00FF;
-    font-weight: 1000;
-    font-style: italic;
-    text-align: center;
-    text-transform: uppercase;
-
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(157, 21, 21, 0.74);   
+  font-family: Georgia, serif;
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: 15px;
+  color: #7F00FF;
+  font-weight: 1000;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(157, 21, 21, 0.74);   
 }
 
 /*****   ***/
 h2{
-     font-family: Georgia, serif;
-    font-size: 30px;
-    letter-spacing: 3px;
-    word-spacing: 12px;
-    color: #7F00FF;
-    font-weight: 700;
-    text-decoration: underline solid rgb(110, 106, 114);
-    text-align: center;
-    text-transform: uppercase; 
+   font-family: Georgia, serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  word-spacing: 12px;
+  color: #7F00FF;
+  font-weight: 700;
+  text-decoration: underline solid rgb(110, 106, 114);
+  text-align: center;
+  text-transform: uppercase; 
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 /*****   ***/
 h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    letter-spacing: 4px;
-    word-spacing: 9px;
-    color:rgb(93, 31, 116);
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 4px;
+  word-spacing: 9px;
+  color:rgb(93, 31, 116);
+  text-align: center;
 }
 
-/***** employers  ***/
+/*****   ***/
 h4{
-    text-align: center;
-    color: rgb(110, 106, 114);
-    font-family: Georgia, serif;
-    font-size: 30px;
+  text-align: center;
+  color: rgb(110, 106, 114);
+  font-family: Georgia, serif;
+  font-size: 30px;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 
-/***** description of life philosophy,   ***/
+/*****    ***/
 p{
-    text-align: center;
-    color: rgb(146, 48, 181);
-    font-family: Georgia, serif;
-    font-size: 18px;
+  text-align: center;
+  color: rgb(146, 48, 181);
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+/*****   *****   *****   *****   *****   *****   ****   *****/
+
+/* page specific styles */
+
+/*****   *****   *****   *****   *****   *****   ****   *****/
+
+
+#about-header, #education-header, #job-header{
+  background-color: #f5f5f5;
+  padding: 2rem;
 }
 
-/*** header photo animation***/
-.header {
-    height: 400px;
-    position: relative;
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem;
+  box-shadow: 2px 2px 5px #999;
+}
+
+/***** image styles (border and max width)*/
+img{ 
+    border: 40px solid #000; 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+
+/*****   ***/
+
+/*****   *****   *****   *****   *****   *****   ****   *****/  
+
+/*** film border ***/
+.film-border {
+  background-color: #000;
+  padding: 30px;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: space-between;
+  /*overflow options = hidden, scroll, auto, visisble*/
+  overflow:auto;
+}
+
+.photo-container img {
+  width: 16.5%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px;
+  filter: grayscale(100%) brightness(80%);
+  transition: filter 0.3s ease-in-out;
+}
+
+/* code for images to revert to original color */
+.photo-container img:hover {
+  filter: none;
+}
+
+.photo-container img:last-child {
+  margin-right: 0;
+}
+
+/*   2-column grid on smaller screens */
+@media only screen and (max-width: 767px) {
+  .photo-container {
+    flex-wrap: wrap;
   }
-  
-  .slideshow {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .photo-container img {
+    width: 48%;
+    margin-bottom: 10px;
+    margin-right: 0;
   }
-  
-  .slideshow img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  .photo-container img:last-child {
+    margin-bottom: 0;
   }
-  
-  .slideshow img:first-child {
-    opacity: 1;
-  }
-  
-  .slideshow img.active {
-    opacity: 1;
-  }
-  
-  @keyframes slideshow {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-    }
-    33% {
-      opacity: 1;
-    }
-    53% {
-      opacity: 0;
-    }
-  }
-  
-  .slideshow img:nth-child(1) {
-    animation-delay: 0s;
-    animation-name: slideshow;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-  }
-  
-  .slideshow img:nth-child(2) {
-    animation-delay: 4s;
-    animation-name: slideshow;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-  }
-  
-  .slideshow img:nth-child(3) {
-    animation-delay: 8s;
-    animation-name: slideshow;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-  }
-  
-  .slideshow img:nth-child(4) {
-    animation-delay: 12s;
-    animation-name: slideshow;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-  }
-  
-  .slideshow img:nth-child(5) {
-    animation-delay: 16s;
-    animation-name: slideshow;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-  }
-  
-  .slideshow img:nth-child(6) {
-    animation-delay: 20s;
-    animation-name: slideshow;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-  }
+}
+/* end of film photo - about Amanda page - code */
+
+
+/*****   *****   *****   *****   *****   *****   ****   *****/
+
+/***** recommended reading flexbox *****/
+
+.recommended-reading .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommended-reading .box {
+  flex: 1 0 calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.recommended-reading .box img {
+  width: 200px;
+  height: auto;
+}
+
+
+
+
+/***
+colors
+dark purple
+  HEX #4A235A rgb (74, 35, 90)
+
+medium dark  
+  HEX ##633974 rgb (99, 57, 116)
+medium purple
+  HEX #8E44AD rgb (142, 68, 173)
+light purple % complimentary green & blue
+  HEX #D2B4DE  #C0DEB4  #B4D5DE
+light purple tint - listed light to dark (inner color of background.)
+  #F9F6FB #F4ECF7 #EEE3F3 #E9DAEE #E3D0EA #DDC7E6
+tones light purple - grey
+#D2B4DE #C8ADD2 #BDA7C6 #B3A0BB #A99AAF #9E93A3 #948D97 #8A868B
+***/
